@@ -11,10 +11,12 @@ export default function App() {
     setText("")
   }
   return (
+    <>
     <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
-      <h2>Todo List</h2>
+      <h3>Todo List</h3>
       <TodoInput text={text} setText={setText} submitHandler={submitHandler}/>
-      <TodoList list={list}/>
     </div>
+      <TodoList list={list}/>
+    </>
   )
 }
